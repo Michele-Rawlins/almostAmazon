@@ -11,8 +11,8 @@ const cartToDom = () => {
     const myCart = cartData.getCart();
     let domString = "";
     for(let i = 0; i < myCart.length; i++){
-    domString += '<h3>$myCart[i].name}</h3>';
+    domString += `<h3>${myCart[i].name}</h3>`;
     }
     util.printToDom('cart-container', domstring);
 };
-export default { cartToDom };
+export default { addToCart };
