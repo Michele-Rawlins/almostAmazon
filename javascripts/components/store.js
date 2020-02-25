@@ -1,10 +1,10 @@
 import util from '../helpers/util.js';
 import bookData from '../helpers/data/bookData.js'
+import cart from '../cart.js';
+
+
 const addToCartEvent = () => {
-    console.log('you click cart');
-    let domString = "";
-    domString += "This is a cart";
-    util.printToDom('cart-container', domstring);
+    cart.cartToDom();
     
 };
 
